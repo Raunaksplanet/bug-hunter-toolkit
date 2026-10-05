@@ -1,0 +1,9 @@
+Set up Paperclip locally on this machine.
+
+1. Prereqs: verify Node.js (LTS) and npm are installed. Check for Postgres — Paperclip can use an embedded local Postgres if none is configured, confirm which mode we're using.
+2. Run: npx paperclipai onboard --yes
+3. Walk through the interactive setup: local vs remote deploy, database config, and creation of a first agent/company.
+4. After onboarding, open the Adapter Manager (Settings → Adapters in the UI) and list which built-in adapters are visible: claude_local, codex_local, gemini_local, opencode_local, cursor, hermes_local, pi_local, openclaw_gateway, process, http.
+5. Confirm the external-adapter runtime is enabled (it's alpha) so I can install external adapter packages later.
+6. Do NOT auto-install or hire any agents yet — just get the instance running and reachable, and report back the local URL, DB mode, and adapter list.
+7. Clone the Paperclip repo (github.com/paperclipai/paperclip) alongside this so I have source to reference for adapter development — don't build/install from source, just have it checked out read-only for reference.
